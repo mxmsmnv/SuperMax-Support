@@ -58,7 +58,7 @@ p { color: var(--muted); }
 
 .hero { position: relative; overflow: hidden; padding: 98px 0 86px; background: radial-gradient(circle at 83% 22%, rgba(255, 214, 38, .24), transparent 22%), linear-gradient(118deg, #f8fbff 0%, #fff 50%, #fff7f8 100%); }
 .hero::after { position: absolute; right: -140px; bottom: -250px; width: 520px; height: 520px; border: 82px solid rgba(199, 24, 58, .055); border-radius: 50%; content: ""; }
-.hero-grid { position: relative; z-index: 1; display: grid; align-items: center; gap: clamp(48px, 6vw, 84px); grid-template-columns: minmax(0, 1.08fr) minmax(400px, .92fr); }
+.hero-grid { position: relative; z-index: 1; display: grid; align-items: start; gap: clamp(48px, 6vw, 84px); grid-template-columns: minmax(0, 1.08fr) minmax(400px, .92fr); }
 .eyebrow { display: inline-flex; margin-bottom: 22px; align-items: center; gap: 9px; color: var(--red-600); font-size: .78rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
 .eyebrow::before { width: 28px; height: 3px; background: var(--yellow-400); content: ""; }
 .hero-copy .lede, .page-hero .lede { max-width: 700px; margin-bottom: 34px; color: #44546c; font-size: clamp(1.08rem, 2vw, 1.3rem); line-height: 1.65; }
