@@ -3,23 +3,118 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Official support and privacy information for SuperMax.">
-  <title>SuperMax</title>
+  <meta name="theme-color" content="#07152f">
+  <meta name="description" content="SuperMax is a focused AI workspace for conversation, voice, planning, GitHub, and MCP services on iPhone and CarPlay.">
+  <meta property="og:title" content="SuperMax AI — Your AI workspace">
+  <meta property="og:description" content="Talk, type, plan, and connect your own AI stack in one focused iPhone workspace.">
+  <meta property="og:image" content="assets/supermax-icon.webp">
+  <title>SuperMax AI — Your AI workspace</title>
+  <link rel="icon" href="assets/supermax-icon.webp">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <main>
-    <header>
-      <div class="mark" aria-hidden="true">✦</div>
-      <h1>SuperMax</h1>
-      <p class="lede">A focused AI assistant for text, voice, daily planning, GitHub, and user-configured MCP services.</p>
-    </header>
-    <div class="actions">
-      <a class="button" href="support/">Get support</a>
-      <a class="button" href="privacy/">Privacy policy</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="./"><img src="assets/supermax-icon.webp" alt="" width="40" height="40">SuperMax AI</a>
+      <div class="nav-links">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#connections">Connections</a>
+        <a href="privacy/">Privacy</a>
+        <a class="nav-cta" href="support/">Support</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <div class="eyebrow">AI workspace for iPhone</div>
+          <h1>Think clearly.<br><span>Move faster.</span></h1>
+          <p class="lede">SuperMax brings conversation, voice, daily planning, GitHub, and your own AI services into one focused workspace—without locking you into a single provider.</p>
+          <div class="actions">
+            <a class="button" href="#capabilities">Explore SuperMax <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="support/">Get support</a>
+          </div>
+        </div>
+        <div class="hero-product" aria-label="SuperMax app icon">
+          <img class="app-icon" src="assets/supermax-icon.webp" alt="SuperMax AI app icon" width="512" height="512">
+          <span class="product-chip">iPhone · CarPlay</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="signal-bar" aria-label="Product principles">
+      <div class="signal-grid container">
+        <div class="signal-item"><strong>One workspace</strong><span>Chat, voice, files, and plans</span></div>
+        <div class="signal-item"><strong>Your providers</strong><span>Choose the model and service</span></div>
+        <div class="signal-item"><strong>Local-first</strong><span>Conversations stay on device</span></div>
+        <div class="signal-item"><strong>Built for motion</strong><span>Background audio and CarPlay</span></div>
+      </div>
     </div>
-    <footer>© 2026 Maxim Semenov</footer>
+
+    <section class="section" id="capabilities">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Focused by design</div>
+            <h2>Everything you need to turn intent into action.</h2>
+          </div>
+          <p>SuperMax removes the handoffs between asking, speaking, checking context, and planning the next step.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-number">01</span><h3>Unified conversation</h3><p>Type, dictate, attach a photo or file, and keep separate chats for the workstreams that matter.</p></article>
+          <article class="feature-card"><span class="feature-number">02</span><h3>Voice that keeps context</h3><p>Use quick dictation or a turn-based continuous conversation with spoken answers, background audio, and Live Activity status.</p></article>
+          <article class="feature-card"><span class="feature-number">03</span><h3>Concrete daily planning</h3><p>Keep the day’s actions, progress, and quick replanning close to the conversation that created them.</p></article>
+          <article class="feature-card"><span class="feature-number">04</span><h3>Connected work</h3><p>Bring repository context and MCP tools into the same workspace when you choose to connect them.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="connections">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow">Bring your own stack</div><h2>Flexible infrastructure. One clear interface.</h2></div>
+          <p>Select the services that fit your workflow. SuperMax does not include a bundled AI subscription or require a SuperMax account.</p>
+        </div>
+        <div class="provider-grid">
+          <article class="provider-card"><span class="provider-mark">AI</span><h3>AI providers</h3><p>OpenRouter or any compatible OpenAI-style endpoint.</p></article>
+          <article class="provider-card"><span class="provider-mark">GH</span><h3>GitHub</h3><p>Official device authorization and repository context.</p></article>
+          <article class="provider-card"><span class="provider-mark">MCP</span><h3>MCP servers</h3><p>Connect a Streamable HTTP MCP server and discover its tools.</p></article>
+          <article class="provider-card"><span class="provider-mark">VO</span><h3>Voice options</h3><p>Installed iPhone voices or an optional xAI voice provider.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="trust-grid container">
+        <div>
+          <div class="eyebrow">Control stays with you</div>
+          <h2>A workspace designed around explicit connections.</h2>
+          <p>SuperMax sends information only when a feature you choose needs a configured service. Credentials are protected in the iOS Keychain, and no SuperMax account is required.</p>
+          <div class="actions"><a class="button button-secondary" href="privacy/">Read the privacy policy</a></div>
+        </div>
+        <div class="trust-panel">
+          <div class="trust-row"><span>01</span><div><strong>On-device storage</strong><small>Chats, plans, and preferences remain local.</small></div></div>
+          <div class="trust-row"><span>02</span><div><strong>Keychain protection</strong><small>Provider credentials and OAuth tokens use iOS Keychain.</small></div></div>
+          <div class="trust-row"><span>03</span><div><strong>No advertising</strong><small>No developer analytics or tracking SDKs.</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-inner container"><h2>Need help configuring SuperMax?</h2><a class="button" href="support/">Open support center <span aria-hidden="true">→</span></a></div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div class="footer-brand"><a class="brand" href="./"><img src="assets/supermax-icon.webp" alt="" width="40" height="40">SuperMax AI</a><p>A focused AI workspace for conversation, voice, planning, and connected work.</p></div>
+      <div class="footer-column"><strong>Product</strong><a href="#capabilities">Capabilities</a><a href="#connections">Connections</a></div>
+      <div class="footer-column"><strong>Company</strong><a href="support/">Support</a><a href="privacy/">Privacy</a></div>
+    </div>
+    <div class="footer-bottom container"><span>© 2026 Maxim Semenov</span><span>Designed for iPhone and CarPlay</span></div>
+  </footer>
 </body>
 </html>
-

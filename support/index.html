@@ -3,32 +3,74 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Support for SuperMax on iPhone and CarPlay.">
-  <title>Support — SuperMax</title>
+  <meta name="theme-color" content="#07152f">
+  <meta name="description" content="Support and troubleshooting for SuperMax AI on iPhone and CarPlay.">
+  <title>Support — SuperMax AI</title>
+  <link rel="icon" href="../assets/supermax-icon.webp">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-  <main>
-    <header>
-      <a href="../" aria-label="SuperMax home"><span class="mark" aria-hidden="true">✦</span></a>
-      <h1>SuperMax Support</h1>
-      <p class="lede">Help for SuperMax on iPhone and CarPlay.</p>
-    </header>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="../"><img src="../assets/supermax-icon.webp" alt="" width="40" height="40">SuperMax AI</a>
+      <div class="nav-links"><a href="../#capabilities">Capabilities</a><a href="../#connections">Connections</a><a href="../privacy/">Privacy</a><a class="nav-cta" href="./" aria-current="page">Support</a></div>
+    </nav>
+  </header>
 
-    <h2>Before contacting support</h2>
-    <ul>
-      <li>Confirm microphone, speech recognition, camera, and photo permissions in iOS Settings when using the related features.</li>
-      <li>In SuperMax, open <strong>Settings → Artificial Intelligence</strong> to verify the active provider, API key, and selected model.</li>
-      <li>GitHub uses device authorization. After approving the code, return to SuperMax and tap <strong>I approved — finish connection</strong> if the app has not completed automatically.</li>
-      <li>xAI voice and other cloud services require a valid account and API key from that provider.</li>
-      <li>An active recording can continue while the app is backgrounded, but it ends after a force quit, device restart, or system termination.</li>
-    </ul>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Support center</div>
+        <h1>Get SuperMax working the way you need.</h1>
+        <p class="lede">Fast checks for voice, providers, GitHub, background audio, and CarPlay—plus direct support when you need it.</p>
+      </div>
+    </section>
 
-    <h2>Contact</h2>
-    <p>Email <a href="mailto:maxim@smnv.org">maxim@smnv.org</a> and include the SuperMax version, iOS version, device model, the screen where the issue occurred, and the exact error message.</p>
-    <p><strong>Never send an API key, OAuth token, password, or private repository content.</strong></p>
-    <div class="actions"><a class="button" href="mailto:maxim@smnv.org?subject=SuperMax%20Support">Email support</a></div>
-    <footer><a href="../">SuperMax</a> · <a href="../privacy/">Privacy policy</a></footer>
+    <div class="page-layout container">
+      <aside class="page-sidebar" aria-label="On this page"><strong>On this page</strong><a href="#quick-fixes">Quick fixes</a><a href="#connection">Connection check</a><a href="#contact">Contact</a></aside>
+      <div class="content-stack">
+        <section id="quick-fixes">
+          <div class="meta">Start here</div>
+          <h2>Quick fixes</h2>
+          <div class="support-grid">
+            <article class="support-card"><span class="card-icon">VO</span><h3>Voice and speech</h3><p>Confirm microphone and speech recognition access in iOS Settings. Also check that another app is not actively using the microphone.</p></article>
+            <article class="support-card"><span class="card-icon">AI</span><h3>AI provider</h3><p>Open <strong>Settings → Artificial Intelligence</strong> and verify the active provider, API key, selected model, and connection status.</p></article>
+            <article class="support-card"><span class="card-icon">GH</span><h3>GitHub connection</h3><p>After approving the device code, return to SuperMax and tap <strong>I approved — finish connection</strong> if authorization does not finish automatically.</p></article>
+            <article class="support-card"><span class="card-icon">BG</span><h3>Background and CarPlay</h3><p>An active recording can continue in the background. Force quitting, restarting the device, or system termination ends the session.</p></article>
+          </div>
+        </section>
+
+        <section class="policy-section" id="connection">
+          <div class="meta">Connection checklist</div>
+          <h2>Verify the full path</h2>
+          <ol class="steps">
+            <li>Confirm the required iOS permission for the feature you are using.</li>
+            <li>Open the corresponding SuperMax settings screen and verify its status.</li>
+            <li>Check that the selected third-party account, API key, model, or server is active.</li>
+            <li>Retry the action and capture the exact message if it still fails.</li>
+          </ol>
+        </section>
+
+        <div class="notice"><strong>Protect your credentials.</strong> Never include an API key, OAuth token, password, or private repository content in a support message.</div>
+
+        <section class="contact-panel" id="contact">
+          <div class="meta">Direct support</div>
+          <h2>Still need help?</h2>
+          <p>Include the SuperMax version, iOS version, device model, the screen where the issue occurred, and the exact error message.</p>
+          <a class="button" href="mailto:maxim@smnv.org?subject=SuperMax%20AI%20Support">Email support <span aria-hidden="true">→</span></a>
+        </section>
+      </div>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div class="footer-brand"><a class="brand" href="../"><img src="../assets/supermax-icon.webp" alt="" width="40" height="40">SuperMax AI</a><p>A focused AI workspace for conversation, voice, planning, and connected work.</p></div>
+      <div class="footer-column"><strong>Product</strong><a href="../#capabilities">Capabilities</a><a href="../#connections">Connections</a></div>
+      <div class="footer-column"><strong>Company</strong><a href="./">Support</a><a href="../privacy/">Privacy</a></div>
+    </div>
+    <div class="footer-bottom container"><span>© 2026 Maxim Semenov</span><span>Designed for iPhone and CarPlay</span></div>
+  </footer>
 </body>
 </html>
