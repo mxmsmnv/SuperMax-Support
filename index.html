@@ -10,6 +10,7 @@
   <meta property="og:image" content="assets/supermax-icon.webp">
   <title>SuperMax AI — Your AI workspace</title>
   <link rel="icon" href="assets/supermax-icon.webp">
+  <link rel="stylesheet" href="assets/icons/remixicon.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -34,23 +35,24 @@
           <h1>Think clearly.<br><span>Move faster.</span></h1>
           <p class="lede">SuperMax brings conversation, voice, daily planning, GitHub, and your own AI services into one focused workspace—without locking you into a single provider.</p>
           <div class="actions">
-            <a class="button" href="#capabilities">Explore SuperMax <span aria-hidden="true">→</span></a>
+            <a class="button" href="#capabilities">Explore SuperMax <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
             <a class="button button-secondary" href="support/">Get support</a>
           </div>
         </div>
-        <div class="hero-product" aria-label="SuperMax app icon">
-          <img class="app-icon" src="assets/supermax-icon.webp" alt="SuperMax AI app icon" width="512" height="512">
-          <span class="product-chip">iPhone · CarPlay</span>
+        <div class="hero-product" aria-label="SuperMax running on iPhone">
+          <div class="floating-badge badge-voice"><i class="ri-mic-ai-line" aria-hidden="true"></i><span>Mixed-language<br>voice input</span></div>
+          <div class="phone-frame"><img class="app-screen" src="assets/supermax-chat.webp" alt="SuperMax AI conversation screen on iPhone" width="516" height="1118"></div>
+          <div class="floating-badge badge-context"><i class="ri-git-repository-line" aria-hidden="true"></i><span>Connected<br>work context</span></div>
         </div>
       </div>
     </section>
 
     <div class="signal-bar" aria-label="Product principles">
       <div class="signal-grid container">
-        <div class="signal-item"><strong>One workspace</strong><span>Chat, voice, files, and plans</span></div>
-        <div class="signal-item"><strong>Your providers</strong><span>Choose the model and service</span></div>
-        <div class="signal-item"><strong>Local-first</strong><span>Conversations stay on device</span></div>
-        <div class="signal-item"><strong>Built for motion</strong><span>Background audio and CarPlay</span></div>
+        <div class="signal-item"><strong><i class="ri-layout-grid-line" aria-hidden="true"></i>One workspace</strong><span>Chat, voice, files, and plans</span></div>
+        <div class="signal-item"><strong><i class="ri-pulse-ai-line" aria-hidden="true"></i>Your providers</strong><span>Choose the model and service</span></div>
+        <div class="signal-item"><strong><i class="ri-shield-keyhole-line" aria-hidden="true"></i>Local-first</strong><span>Conversations stay on device</span></div>
+        <div class="signal-item"><strong><i class="ri-car-line" aria-hidden="true"></i>Built for motion</strong><span>Background audio and CarPlay</span></div>
       </div>
     </div>
 
@@ -64,10 +66,26 @@
           <p>SuperMax removes the handoffs between asking, speaking, checking context, and planning the next step.</p>
         </div>
         <div class="feature-grid">
-          <article class="feature-card"><span class="feature-number">01</span><h3>Unified conversation</h3><p>Type, dictate, attach a photo or file, and keep separate chats for the workstreams that matter.</p></article>
-          <article class="feature-card"><span class="feature-number">02</span><h3>Voice that keeps context</h3><p>Use quick dictation or a turn-based continuous conversation with spoken answers, background audio, and Live Activity status.</p></article>
-          <article class="feature-card"><span class="feature-number">03</span><h3>Concrete daily planning</h3><p>Keep the day’s actions, progress, and quick replanning close to the conversation that created them.</p></article>
-          <article class="feature-card"><span class="feature-number">04</span><h3>Connected work</h3><p>Bring repository context and MCP tools into the same workspace when you choose to connect them.</p></article>
+          <article class="feature-card"><div class="feature-meta"><span class="feature-icon"><i class="ri-chat-ai-line" aria-hidden="true"></i></span><span class="feature-number">01</span></div><h3>Unified conversation</h3><p>Type, dictate, attach a photo or file, and keep separate chats for the workstreams that matter.</p></article>
+          <article class="feature-card"><div class="feature-meta"><span class="feature-icon"><i class="ri-speak-ai-line" aria-hidden="true"></i></span><span class="feature-number">02</span></div><h3>Voice that keeps context</h3><p>Use quick dictation or a turn-based continuous conversation with spoken answers, background audio, and Live Activity status.</p></article>
+          <article class="feature-card"><div class="feature-meta"><span class="feature-icon"><i class="ri-calendar-todo-line" aria-hidden="true"></i></span><span class="feature-number">03</span></div><h3>Concrete daily planning</h3><p>Keep the day’s actions, progress, and quick replanning close to the conversation that created them.</p></article>
+          <article class="feature-card"><div class="feature-meta"><span class="feature-icon"><i class="ri-links-line" aria-hidden="true"></i></span><span class="feature-number">04</span></div><h3>Connected work</h3><p>Bring repository context and MCP tools into the same workspace when you choose to connect them.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" aria-labelledby="workflow-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow">One continuous loop</div><h2 id="workflow-title">From thought to useful output in three steps.</h2></div>
+          <p>SuperMax keeps capture, reasoning, and action in one interface so you can stay with the task instead of switching tools.</p>
+        </div>
+        <div class="workflow-map" aria-label="SuperMax workflow">
+          <article class="workflow-step"><i class="ri-mic-ai-line" aria-hidden="true"></i><span>01 · Capture</span><h3>Speak or type naturally</h3><p>Start with text, voice, a photo, or a file.</p></article>
+          <div class="workflow-arrow" aria-hidden="true"><i class="ri-arrow-right-line"></i></div>
+          <article class="workflow-step"><i class="ri-pulse-ai-line" aria-hidden="true"></i><span>02 · Understand</span><h3>Use the right model</h3><p>Route the request through the provider and role you selected.</p></article>
+          <div class="workflow-arrow" aria-hidden="true"><i class="ri-arrow-right-line"></i></div>
+          <article class="workflow-step"><i class="ri-checkbox-circle-line" aria-hidden="true"></i><span>03 · Act</span><h3>Continue with context</h3><p>Read the answer, update the plan, or use a connected service.</p></article>
         </div>
       </div>
     </section>
@@ -79,10 +97,10 @@
           <p>Select the services that fit your workflow. SuperMax does not include a bundled AI subscription or require a SuperMax account.</p>
         </div>
         <div class="provider-grid">
-          <article class="provider-card"><span class="provider-mark">AI</span><h3>AI providers</h3><p>OpenRouter or any compatible OpenAI-style endpoint.</p></article>
-          <article class="provider-card"><span class="provider-mark">GH</span><h3>GitHub</h3><p>Official device authorization and repository context.</p></article>
-          <article class="provider-card"><span class="provider-mark">MCP</span><h3>MCP servers</h3><p>Connect a Streamable HTTP MCP server and discover its tools.</p></article>
-          <article class="provider-card"><span class="provider-mark">VO</span><h3>Voice options</h3><p>Installed iPhone voices or an optional xAI voice provider.</p></article>
+          <article class="provider-card"><span class="provider-mark"><i class="ri-pulse-ai-line" aria-hidden="true"></i></span><h3>AI providers</h3><p>OpenRouter or any compatible OpenAI-style endpoint.</p></article>
+          <article class="provider-card"><span class="provider-mark"><i class="ri-github-line" aria-hidden="true"></i></span><h3>GitHub</h3><p>Official device authorization and repository context.</p></article>
+          <article class="provider-card"><span class="provider-mark"><i class="ri-server-line" aria-hidden="true"></i></span><h3>MCP servers</h3><p>Connect a Streamable HTTP MCP server and discover its tools.</p></article>
+          <article class="provider-card"><span class="provider-mark"><i class="ri-speak-line" aria-hidden="true"></i></span><h3>Voice options</h3><p>Installed iPhone voices or an optional xAI voice provider.</p></article>
         </div>
       </div>
     </section>
@@ -96,15 +114,15 @@
           <div class="actions"><a class="button button-secondary" href="privacy/">Read the privacy policy</a></div>
         </div>
         <div class="trust-panel">
-          <div class="trust-row"><span>01</span><div><strong>On-device storage</strong><small>Chats, plans, and preferences remain local.</small></div></div>
-          <div class="trust-row"><span>02</span><div><strong>Keychain protection</strong><small>Provider credentials and OAuth tokens use iOS Keychain.</small></div></div>
-          <div class="trust-row"><span>03</span><div><strong>No advertising</strong><small>No developer analytics or tracking SDKs.</small></div></div>
+          <div class="trust-row"><i class="ri-smartphone-line" aria-hidden="true"></i><div><strong>On-device storage</strong><small>Chats, plans, and preferences remain local.</small></div></div>
+          <div class="trust-row"><i class="ri-key-2-line" aria-hidden="true"></i><div><strong>Keychain protection</strong><small>Provider credentials and OAuth tokens use iOS Keychain.</small></div></div>
+          <div class="trust-row"><i class="ri-advertisement-line" aria-hidden="true"></i><div><strong>No advertising</strong><small>No developer analytics or tracking SDKs.</small></div></div>
         </div>
       </div>
     </section>
 
     <section class="cta">
-      <div class="cta-inner container"><h2>Need help configuring SuperMax?</h2><a class="button" href="support/">Open support center <span aria-hidden="true">→</span></a></div>
+      <div class="cta-inner container"><h2>Need help configuring SuperMax?</h2><a class="button" href="support/">Open support center <i class="ri-arrow-right-line" aria-hidden="true"></i></a></div>
     </section>
   </main>
 
